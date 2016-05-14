@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SVG Meter Gauge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="wrapper">
+	<svg id="meter">
+	    <circle id="outline_curves" class="circle outline"  cx="50%" cy="50%">
+	    </circle>
+	    <circle id="low" class="circle range" cx="50%" cy="50%" stroke="#FDE47F">
+	    </circle>
+	    <circle id="avg" class="circle range" cx="50%" cy="50%" stroke="#7CCCE5">
+	    </circle>
+	    <circle id="high" class="circle range" cx="50%" cy="50%" stroke="#E04644">
+	    </circle>
+	    <circle id="mask" class="circle" cx="50%" cy="50%" >
+	    </circle>
+	    <circle id="outline_ends" class="circle outline" cx="50%" cy="50%">
+	    </circle>
+	</svg>
+	<img id="meter_needle" src="svg-meter-gauge-needle.svg" alt="">
+	<input id="slider" type="range" min="0" max="100" value="0" /> 
+	<label id="lbl" id="value" for="">0%</label>
+	</div>
+    <script src="script.js"></script>
+</body>
+
+</html>
